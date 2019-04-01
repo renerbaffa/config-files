@@ -1,0 +1,28 @@
+{
+    "window.zoomLevel": 0,
+    "editor.rulers": [100],
+    "editor.tabSize": 2,
+    "prettier.eslintIntegration": true,
+    "prettier.stylelintIntegration": true,
+    "eslint.autoFixOnSave": true,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "workbench.colorTheme": "Oceanic Next",
+    "workbench.iconTheme": "vs-seti",
+    "workbench.colorCustomizations": {
+        "sideBar.background": "#1E2B33",
+        "editor.background": "#1F3547",
+        "activityBar.background": "#1F3547",
+        "editorLineNumber.foreground": "#B4813D",
+        "editorWidget.background": "#1F3547",
+        "editorGroup.border": "#FFF",
+        "editorGroupHeader.tabsBorder": "#FFF",
+        "activityBar.border": "#FFF",
+        "editorGroupHeader.tabsBackground": "#1F3547",
+        "tab.inactiveBackground": "#1F3547",
+        "tab.activeBackground": "#172737"
+    },
+    "editor.smoothScrolling": true,
+    "editor.cursorStyle": "block",
+    "editor.cursorBlinking": "smooth",
+    "editor.cursorSmoothCaretAnimation": true,
+}
