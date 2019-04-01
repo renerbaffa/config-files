@@ -1,1 +1,35 @@
+List of extensions:
 
+- [CoenraadS.bracket-pair-colorizer](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer)
+- [danields761.status-bar-breadcrumb](https://marketplace.visualstudio.com/items?itemName=danields761.status-bar-breadcrumb)
+- [dbaeumer.vscode-eslint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+- [eg2.vscode-npm-script](https://marketplace.visualstudio.com/items?itemName=eg2.vscode-npm-script)
+- [esbenp.prettier-vscode](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+- [formulahendry.auto-rename-tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag)
+- [jasonnutter.search-node-modules](https://marketplace.visualstudio.com/items?itemName=jasonnutter.search-node-modules)
+- [jpoissonnier.vscode-styled-components](https://marketplace.visualstudio.com/items?itemName=jpoissonnier.vscode-styled-components)
+- [mrmlnc.vscode-scss](https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-scss)
+- [naumovs.theme-oceanicnext](https://marketplace.visualstudio.com/items?itemName=naumovs.theme-oceanicnext)
+- [waderyan.gitblame](https://marketplace.visualstudio.com/items?itemName=waderyan.gitblame)
+- [WallabyJs.quokka-vscode](https://marketplace.visualstudio.com/items?itemName=WallabyJs.quokka-vscode)
+
+
+
+To generate the list:
+
+
+const {execSync, spawn} = require('child_process')
+
+const result = execSync('code --list-extensions')
+
+const list = String(result)
+  .split('\n')
+  .filter(Boolean)
+  .map(
+    x => `- [${x}](https://marketplace.visualstudio.com/items?itemName=${x})`
+  )
+  .join('\n')
+
+const proc = spawn('pbcopy')
+proc.stdin.write(list)
+proc.stdin.end()
