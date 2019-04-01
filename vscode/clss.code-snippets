@@ -1,0 +1,8 @@
+{
+	"Console_Log_With_CSS": {
+		"prefix": "clss",
+		"scope": "javascript",
+		"body": ["console.log('%c$1', 'background: green; color: white;', $1)"],
+		"description": "console.log() command with CSS"
+	},
+}
